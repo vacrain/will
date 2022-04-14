@@ -4,17 +4,15 @@
 
 ## Git
 
-### 注意
-
 github 不配置好ssh 是提交不了的哦！！！
 
 vscode左侧那个竖条里的图标，就下面这个，只能做到git add 和git commit ，git push到远端github 还是要手动来（无语）
 
-![1649919076118.png](image/踩坑/1649919076118.png)
+![img_20220414](https://gitee.com/vacrain/typora_img/raw/master/assets/imgs/2021/2022-04-14_15-40-27_img_20220414.png)
 
 如果push返回443延迟、超时了，不要紧张，真的就八成是连不上github，毕竟有wall~ 2022/4/14今日就到这里吧，学点别的了！
 
-### git命令啥的
+- git命令啥的
 
 ```
 
@@ -71,17 +69,12 @@ To https://github.com/vacrain/learning.git
 
 ![](https://exp-picture.cdn.bcebos.com/988e1c532f632385f5d24627cce833e038725d7e.jpg?x-bce-process=image%2Fresize%2Cm_lfit%2Cw_500%2Climit_1%2Fquality%2Cq_80)
 
-### git每日执行命令
-
-```
-git add .
-git commit -m"你的描述"
-git push
-```
-
-
-
 ## Linux
+
+### 注意
+
+1. 不能用中文命名文件，否则会出现大量未知的问题！！
+2. 
 
 ### Linux命令
 
@@ -540,9 +533,23 @@ npm install yarn -g
 
 https://www.cnblogs.com/chenzilong/p/16065185.html
 
-
 ## Vscode
 
 ### 大坑！！！VSCODE 终端 取消右键粘贴 快速模式取消
 
 https://blog.csdn.net/akapinkman/article/details/108960835
+
+### 左侧的source control自动检测文件
+
+把  .git 文件删掉就好了！
+
+
+
+
+
+
+
+
+
+
+
