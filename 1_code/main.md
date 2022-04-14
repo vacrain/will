@@ -11,8 +11,10 @@
 - [X] 知乎专栏
 - [X] 公众号
 - [X] b站
-- [ ] 开发记录，保存到一个平台，gitee吧
-- [ ]
+- [X] 开发学习记录，保存到一个平台，git
+- [ ] 
+
+
 
 ### 域名
 
@@ -21,12 +23,14 @@
 - [ ] 实名成功3天后，备案
 - [ ] dns解析
 - [ ] https
-- [ ]
+- [ ] 
+
+
 
 ### 服务器
 
-- [ ] 取消。。mac 系统下 Iterm2下载安装，设置，连接服务器
-- [ ] ci/cd
+- [ ] ~~mac 系统下 Iterm2下载安装，设置，连接服务器~~
+- [ ] ci/cd 环境搭建
   - [ ] GitHub action
   - [ ] Jskin+webhook
 - [X] 玩坏了，重装系统：https://boke112.com/post/7841.html
@@ -41,9 +45,9 @@ ssh root@101.43.138.54
 - [X] vscode 通过ssh远程连接Linux 服务器 https://blog.csdn.net/zhaxun/article/details/120568402
 - [X] 安装node
 - [X] 安装git https://www.imooc.com/article/44583  解压后少了一步，进入文件夹 cd git文件夹
-- [X]
 
-  <img src="https://gitee.com/vacrain/typora_img/raw/master/assets/imgs/2021/2022-04-11_21-35-10_WX20220410-101307@2x.png" alt="WX20220410-101307@2x" style="zoom:25%;" />
+<img src="https://gitee.com/vacrain/typora_img/raw/master/assets/imgs/2021/2022-04-11_21-35-10_WX20220410-101307@2x.png" alt="WX20220410-101307@2x" style="zoom:25%;" />
+
 - [X] 重置密码
 - [X] MobaXterm下载安装
 
@@ -58,7 +62,7 @@ ssh root@101.43.138.54
     - [ ] 来到http://mirrors.163.com/centos/8-stream/
     - [ ] 再找os，再找64编码的，然后packages，里面搜索 yum ，右键第一个链接， 复制链接
     - [ ] 最后在服务器终端中输入： rpm -ivh 加上刚复制的链接
-  - [ ] 安装完查看版本：yum info yum
+  - [ ] 安装完查看版本：yum --version
 
   - ```
     下面的 Centos-7 根据自己的版本号来，我是8.2所以写成Centos-8就行
@@ -102,7 +106,7 @@ ssh root@101.43.138.54
 - [X] shell远程连接
 - [ ] vscode 实现所见即所得 markdown编辑器
   - [ ] Office Viewer 很多人强烈推荐的替代typora的插件！
-  - [ ] VSCODE 终端 取消右键粘贴 快速模式取消  https://blog.csdn.net/akapinkman/article/details/108960835
+    - [ ] 实际上远不及Typora，不太建议了
 - [ ] 取消Windows搜索文件工具 everything
 
 - 其他
