@@ -1,5 +1,3 @@
 # learning
 
-what i'm learning
-
-
+what i'm learning~
