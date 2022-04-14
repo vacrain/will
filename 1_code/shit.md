@@ -4,7 +4,16 @@
 
 ## Git
 
-github 不配置好ssh 是提交不了的哦！！！
+### 注意
+
+github 不配置好ssh 是提交不了的哦！！！具体过程就是：（需要基本的网络安全知识，即非对称加密）
+
+1. 本机生成ssh私钥、公钥
+2. github配置本机公钥
+3. git clone项目
+4. git提交项目
+
+
 
 vscode左侧那个竖条里的图标，就下面这个，只能做到git add 和git commit ，git push到远端github 还是要手动来（无语）
 
@@ -12,7 +21,7 @@ vscode左侧那个竖条里的图标，就下面这个，只能做到git add 和
 
 如果push返回443延迟、超时了，不要紧张，真的就八成是连不上github，毕竟有wall~ 2022/4/14今日就到这里吧，学点别的了！
 
-- git命令啥的
+### git命令啥的
 
 ```
 
@@ -68,6 +77,16 @@ To https://github.com/vacrain/learning.git
 ```
 
 ![](https://exp-picture.cdn.bcebos.com/988e1c532f632385f5d24627cce833e038725d7e.jpg?x-bce-process=image%2Fresize%2Cm_lfit%2Cw_500%2Climit_1%2Fquality%2Cq_80)
+
+### 提交三连
+
+```
+git add .
+git commit -m"msg"
+git push
+```
+
+
 
 ## Linux
 
@@ -321,6 +340,8 @@ service sshd start
 ```
 
 配置 https://blog.csdn.net/fish_skyyyy/article/details/119213714
+
+
 
 ### 软件包
 
