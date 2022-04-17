@@ -2,7 +2,18 @@
 
 [toc]
 
+## 配置相关
 
+## allowSyntheticDefaultImports
+
+当allowSyntheticDefaultImports 设置为true 的时候，允许下面的导入：
+
+`import React from "react";`
+ 用来替代:
+
+```
+import * as React from "react";
+```
 
 ## Tolearn
 
@@ -50,8 +61,25 @@ naive相关项目： https://github.com/naive-ui/awesome-naive
 ### 常用命令
 
 ```
-npm init vite@latest
+pnpm init vite@latest
 ```
+
+```
+pnpm install @types/node
+pnpm i -D naive-ui
+pnpm install vue-router
+
+```
+
+```
+
+```
+
+
+
+
+
+
 
 
 

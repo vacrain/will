@@ -9,6 +9,26 @@
 
 
 
+### 生产力 工具们
+
+![image-20210807092418503](https://gitee.com/vacrain/typora_img/raw/master/assets/imgs/2021/image-20210807092418503.png)
+
+
+
+### 火狐插件
+
+- [extension workstop](https://extensionworkshop.com/?utm_content=footer-link&utm_medium=referral&utm_source=addons.mozilla.org)
+- [Working with the Tabs API](https://extensionworkshop.com/?utm_content=footer-link&utm_medium=referral&utm_source=addons.mozilla.org)
+- [Content scripts](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/Content_scripts)
+- [User interface](https://developer.mozilla.org/en-US/docs/Mozilla/Add-ons/WebExtensions/user_interface)
+- [如何给Firefox 火狐浏览器安装自己的插件](https://jingyan.baidu.com/article/c1a3101e9806fd9f646deb71.html)
+
+
+
+
+
+
+
 ### 小鹤双拼
 
 > 建议设置成壁纸。
@@ -751,6 +771,12 @@ export PATH=$PATH:$yarn/bin
 
 ## Git
 
+### 同时提交到github 和 gitee
+
+https://blog.csdn.net/gozhuyinglong/article/details/113861993
+
+
+
 ### vscode git 提交
 
 ![image-20220416182406906](https://gitee.com/vacrain/typora_img/raw/master/assets/imgs/2021/2022-04-16_18-24-07_image-20220416182406906.png)
@@ -890,5 +916,4 @@ https://blog.csdn.net/weixin_46504044/article/details/105136645
 4. 双击false 改成 true
 5. 重启浏览器
 6. ok
-
 
