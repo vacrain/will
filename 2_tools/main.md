@@ -9,6 +9,12 @@
 
 
 
+### 记录代码时间vscdoe工具
+
+https://wakatime.com/
+
+
+
 ### 生产力 工具们
 
 ![image-20210807092418503](https://gitee.com/vacrain/typora_img/raw/master/assets/imgs/2021/image-20210807092418503.png)
@@ -770,6 +776,27 @@ export PATH=$PATH:$yarn/bin
 
 
 ## Git
+
+
+
+### git 全局忽略配置
+
+```
+vim ~/.gitignore_global
+```
+
+![image-20220417155839308](https://gitee.com/vacrain/typora_img/raw/master/assets/imgs/2021/2022-04-17_15-58-39_image-20220417155839308.png)
+
+在 ~/.gitconfig 中引入 .gitignore_global
+
+```
+[core]
+	excludesfile = ~/.gitignore_global
+```
+
+
+
+
 
 ### 同时提交到github 和 gitee
 

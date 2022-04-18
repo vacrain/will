@@ -2,9 +2,11 @@
 
 [toc]
 
-## 配置相关
 
-## allowSyntheticDefaultImports
+
+## Json 配置相关
+
+### allowSyntheticDefaultImports
 
 当allowSyntheticDefaultImports 设置为true 的时候，允许下面的导入：
 
@@ -15,6 +17,8 @@
 import * as React from "react";
 ```
 
+
+
 ## Tolearn
 
 - [x] vue复习
@@ -22,17 +26,10 @@ import * as React from "react";
   - [x] [csdn vue3](https://blog.csdn.net/qq1195566313/article/details/122768533?ops_request_misc=%257B%2522request%255Fid%2522%253A%2522165006722516780269878741%2522%252C%2522scm%2522%253A%252220140713.130102334.pc%255Fall.%2522%257D&request_id=165006722516780269878741&biz_id=0&utm_medium=distribute.pc_search_result.none-task-blog-2~all~first_rank_ecpm_v1~rank_v31_ecpm-1-122768533.142^v9^pc_search_result_cache,157^v4^control&utm_term=%E5%B0%8F%E6%BB%A1&spm=1018.2226.3001.4187)
   - [ ] [vue3新特性，b站](https://www.bilibili.com/video/BV1dS4y1y7vd?p=7&spm_id_from=333.1007.top_right_bar_window_history.content.click) 不看了，太慢了，直接clone几个项目学
 - [ ] ui选择、项目学习。选择标准：一个月内有人维护，样式还行，pc和移动端可以用一套的
-  - [ ] vuetify
-  - [ ] element
-  - [ ] vant
+  - [ ] vuetify，没有啥好项目
+  - [ ] element，没人维护了
+  - [ ] vant，vue3支持不太好
   - [x] naive
-
-学习过程
-
-- [x] clone项目
-- [ ] ~~拼装package.json~~
-
-
 
 
 
@@ -46,34 +43,34 @@ import * as React from "react";
 
 
 
-相关项目：
-
-https://github.com/Talljack/naive-ui-provider
 
 
+### 创建、安装命令
 
-naive相关项目： https://github.com/naive-ui/awesome-naive
-
-
-
-
-
-### 常用命令
+创建vue3 + vite 项目
 
 ```
 pnpm init vite@latest
 ```
 
+安装依赖，按需安装
+
 ```
 pnpm install @types/node
+
 pnpm i -D naive-ui
+
 pnpm install vue-router
 
+// 这个vicons不太好用啊
+pnpm i -D @vicons/fluent
+pnpm i -D @vicons/ionicons4
+pnpm i -D @vicons/ionicons5
+
+pnpm install @iconify/vue 
 ```
 
-```
 
-```
 
 
 
@@ -85,14 +82,21 @@ pnpm install vue-router
 
 ### 参考项目
 
-- Soybean Admin
-  - https://github.com/honghuangdc/soybean-admin
-- vite-vue3-starter
-  - https://github.com/XPoet/vite-vue3-starter
-- vue3-demo
-  - https://github.com/vincentzyc/vue3-demo.git
-- https://github.com/someGenki/vue-lite-admin
-- 
+- naive ui：https://github.com/naive-ui/awesome-naive
+
+https://github.com/Talljack/naive-ui-provider
+
+https://github.com/honghuangdc/soybean-admin
+
+- Vant3 
+
+https://github.com/vincentzyc/vue3-demo.git
+
+- element
+
+https://github.com/XPoet/vite-vue3-starter
+
+https://github.com/someGenki/vue-lite-admin
 
 
 
@@ -148,7 +152,11 @@ Vetur Validation: Script
 
 取消打勾
 
-再重新打开页面即可
+再重新打开页面即可 (vue3这边建议是直接卸载该插件，改用volar)
 
 ![image-20220416060111524](https://gitee.com/vacrain/typora_img/raw/master/assets/imgs/2021/2022-04-16_14-24-54_2022-04-16_06-01-11_image-20220416060111524.png)
+
+## 其他
+
+[pinia 对比 vuex ](https://blog.csdn.net/duninet/article/details/118945362)
 
