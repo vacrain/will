@@ -9,6 +9,12 @@
 
 
 
+### mac开机显示电量0%
+
+https://www.somode.com/course/16989.html
+
+
+
 ### 记录代码时间vscdoe工具
 
 https://wakatime.com/

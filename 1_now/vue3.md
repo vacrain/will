@@ -6,6 +6,12 @@
 
 
 
+### volar插件安装完设置
+
+Volar › Code Lens: Script Setup Tools  这个要打开
+
+
+
 ### vite.config.js 配置相关
 
 vite.config.js配置入门详解 https://www.jb51.net/article/236293.htm
@@ -22,6 +28,10 @@ vite.config.js配置入门详解 https://www.jb51.net/article/236293.htm
 
 ```
 pnpm init vite@latest
+or
+npm init @vitejs/app 项目名称
+or
+yarn create @vitejs/app 项目名称
 ```
 
 安装依赖，按需安装
@@ -52,30 +62,6 @@ pnpm install @iconify/vue
 
 
 ### 参考项目
-
-- naive ui：https://github.com/naive-ui/awesome-naive
-
-https://github.com/Talljack/naive-ui-provider
-
-https://github.com/honghuangdc/soybean-admin
-
-https://github.com/TuSimple/naive-ui
-
-- Vant3 
-
-https://github.com/vincentzyc/vue3-demo.git
-
-- element
-
-https://github.com/XPoet/vite-vue3-starter
-
-https://github.com/someGenki/vue-lite-admin
-
-- 其他
-
-https://github.com/vincentzyc/vue3-demo
-
-
 
 ### start
 
