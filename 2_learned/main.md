@@ -738,9 +738,11 @@ https://blog.csdn.net/rheostat/article/details/7614451
 
 **先 xz -d xxx.tar.xz 将 xxx.tar.xz解压成 xxx.tar 然后，再用 tar xvf xxx.tar来解包。**
 
-然后通过     ln -s 命令的绝对路径 /usr/local/bin        把命令变成全局可用的
+然后通过下面的命令，把命令变成全局可用的
 
-
+```
+ln -s 命令的绝对路径 /usr/local/bin       
+```
 
 Yarn
 
@@ -750,6 +752,8 @@ npm install yarn -g
 
 linux然后记得加软连接
 
+
+
 mac配置bashrc或zshrc等文件，比如我用的zsh，所以安装下面操作：
 
 ```
@@ -757,6 +761,7 @@ cd ~
 open .zshrc
 上两步会打开一个记事本，然后把yarn的路径填进去，路径在哪要看npm的默认安装目录配置
 我的是/usr/local/lib/node_modules
+
 所以在.zshrc文件中写入如下
 # yarn
 export yarn=/usr/local/lib/node_modules
@@ -776,6 +781,110 @@ export PATH=$PATH:$yarn/bin
 
 
 ## Git
+
+### 修改提交仓库地址
+
+打开.git 文件夹中的 config 文件，直接修改地址即可
+
+### 如何将代码同时提交到Github和码云Gitee上
+
+https://blog.csdn.net/gozhuyinglong/article/details/113861993
+
+- 配置好后，每次提交下面两个命令各用一次就好，或者用vscode 点点点就行
+
+```
+git push
+git push gitee
+```
+
+- vscode 点点点提交，正常同步github（如果github是第一个remote库的话），再点一下下面的按钮，然后选gitee提交一下
+
+![image-20220420073253948](https://gitee.com/vacrain/typora_img/raw/master/assets/imgs/2021/2022-04-20_07-32-54_image-20220420073253948.png)
+
+
+
+**配置说明** ：
+
+- 查看
+
+这个origin就是一个指向远程仓库的名称，是你在clone时 git 为你默认创建的。
+
+```
+> git remote
+origin
+```
+
+```
+> git remote -v
+origin	https://github.com/vacrain/naive-ui-steppp.git (fetch)
+origin	https://github.com/vacrain/naive-ui-steppp.git (push)
+```
+
+- 重命名，然后查看一下
+
+```
+> git remote rename origin github
+> git remote
+github
+> git remote -v
+github	https://github.com/vacrain/naive-ui-steppp.git (fetch)
+github	https://github.com/vacrain/naive-ui-steppp.git (push)
+```
+
+- 添加同名库链接，然后再查看一下
+
+```
+> git remote add gitee https://gitee.com/vacrain/naive-ui-steppp.git
+> git remote
+gitee
+github
+> git remote -v
+gitee	https://gitee.com/vacrain/naive-ui-steppp.git (fetch)
+gitee	https://gitee.com/vacrain/naive-ui-steppp.git (push)
+github	https://github.com/vacrain/naive-ui-steppp.git (fetch)
+github	https://github.com/vacrain/naive-ui-steppp.git (push)
+```
+
+- pull push 带分支提交(==一般gitee 默认分支是master喔！！== 可以去仓库主页设置一下，把main设置成默认仓库，或者通过下一步绑定的时候 用git branch --set-upstream-to=gitee/master main)
+
+```
+git push github main
+git pull github main
+
+git push gitee main
+git pull gitee main
+```
+
+- 想不带分支提交，就绑定一下
+
+```
+git branch --set-upstream-to=gitee/main main
+格式说明
+git branch --set-upstream-to=<remote>/<remote_branch> <local_branch>
+```
+
+- 移除
+
+```
+git remote remove gitee
+```
+
+
+
+
+
+
+
+
+
+
+
+
+
+```
+git push
+git push gitee
+```
 
 
 
@@ -797,10 +906,6 @@ vim ~/.gitignore_global
 
 
 
-
-### 同时提交到github 和 gitee
-
-https://blog.csdn.net/gozhuyinglong/article/details/113861993
 
 
 
