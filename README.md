@@ -20,7 +20,7 @@
 
 :rice: 食用方式：
 
-1. git clone （推荐）
+1. git clone（推荐）
 2. 直接下载压缩包
 
 
