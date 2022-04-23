@@ -6,9 +6,9 @@
 >	
 >  :bulb: 传播知识的最好时机是你刚刚学会的时候，因为这是不会再有的好机会，你可以将知识城门的钥匙抛给他人！
 
+[toc]
 
-
-:books: 目录说明：
+## :books: 目录说明
 
 - **1_Mothly-Archive：**每个月月初，会把上个月学的内容放到这里，每个月一个md文件	
   - **YYYY-MM.md：**过去的学习内容
@@ -25,18 +25,19 @@
 
 
 
-:rice: 食用方式：
+## :rice: 食用方式
 
 1. :link: git clone（推荐） or  直接下载压缩包
 2. :eyes: 下载唯一推荐查看工具**Typora**（虽然开始收费了，**但是beta测试版依旧免费且没问题**，有条件的还是去支持一下人家...）
-3. :briefcase: 安装好了后，按照在 **2_Classified** 目录中有typora配置及使用技巧讲解 ~
-4. :open_book: 用typora打开clone好的目录
-5. :mag: 全局搜索你感兴趣的关键词~
-6. :question: 有疑惑or讨论需要，加qq群：187440541
+3. :briefcase: 安装好了后，首先点一下这个 ![image-20220423050144107](https://gitee.com/vacrain/typora_img/raw/master/assets/imgs/2021/2022-04-23_05-01-44_image-20220423050144107.png) 或者在菜单栏中切换成树视图
+4. 然后按照在 **2_Classified** 目录中有typora配置及使用技巧讲解 ~
+5. :open_book: 用typora打开clone好的目录
+6. :mag: 全局搜索你感兴趣的关键词~
+7. :question: 有疑惑or讨论需要，加qq群：187440541
 
 
 
-:computer: 推荐学习路径：
+## :computer: 推荐学习路径
 
 1. Github
 2. 谷歌
@@ -49,7 +50,7 @@
 
 
 
-:link: 学习资源推荐！
+## :link: 学习资源推荐
 
 > 都是我看完的，有意思又能学明白
 

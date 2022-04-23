@@ -1,9 +1,6 @@
-
-
-
-
-
 # OS 操作系统
+
+[toc]
 
 ## Linux
 
@@ -440,6 +437,12 @@ https://blog.csdn.net/lxyoucan/article/details/116736501
 ### mac开机显示电量0%
 
 https://www.somode.com/course/16989.html
+
+1. 关机
+2. 连接充电线
+3. 同时按 **Shift+Control+Option和电源键**
+4. 按下后，持续2s左右，松开这些按键。
+5. 松开后，使用电源键打开电脑，就可以正常充电了。
 
 
 
