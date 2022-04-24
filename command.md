@@ -8,17 +8,62 @@
 
 ## Linux
 
-文件操作
+### jenkins
 
 ```
+基本使用 
+service jenkins 后面可以加start、stop、status、restart
+
+修改配置文件
+vi /etc/sysconfig/jenkins
+
+配置重载
+systemctl daemon-reload
+
+systemctl启动，检查状态
+systemctl start jenkins
+systemctl enable jenkins
+systemctl status jenkins.service
+```
+
+
+
+### nginx
+
+```
+配置文件（不建议使用vi，这玩意有点多，还是用vscode或者其他编辑器远程 编辑）
+vi /usr/local/nginx/conf/nginx.conf
+
+nginx -s reload
+nginx -s quit
+
+nginx -s stop
+
+```
+
+
+
+### 文件/软件包 操作
+
+```
+
+
+
+
+
+
+
 创建文件
 touch
+
+卸载
+rpm -e 包名
 
 解压
 tar -zxvf xxxxxxxx.tar.gz
 ```
 
-查看（文件类）
+### 查看（文件内容类）
 
 ```
 more
@@ -28,22 +73,52 @@ cat
 
 
 
-查看（非文件类）
+### 查看（非文件内容）
 
 ```
+
+
+
+
+
+
+看rpm包，安装的详细路径
+rpm -ql +包名
+
+网络,查询指定端口号情况
+> netstat -tnlp | grep :80
+
+环境变量
+> echo $PATH
+
 查看软件版本
 >rpm -qa | grep java
 
 查看内核版本
 > arch
 
+文件系统  容量  已用  可用  已用占比   挂载点
+> df -h
+
+最占地方的文件是谁
+du -sh *
+
+查询系统日志的工具
+> journalctl -xe
+
 系统版本
 > cat /etc/redhat-release
 ```
 
-vim
+### vim
 
 ```
+剪切当前行
+dd
+
+粘贴
+p
+
 编辑
 i
 
