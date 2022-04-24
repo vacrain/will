@@ -83,6 +83,7 @@ yum search 包名
 sed -i -e '/mirrors.cloud.aliyuncs.com/d' -e '/mirrors.aliyuncs.com/d' /etc/yum.repos.d/CentOS-Base.repo
 wget -O /etc/yum.repos.d/CentOS-Base.repo http://mirrors.aliyun.com/repo/Centos-8.repo
 
+
 yum配置目录
 /etc/yum.repos.d/
 ```
