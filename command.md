@@ -34,11 +34,13 @@ systemctl status jenkins.service
 配置文件（不建议使用vi，这玩意有点多，还是用vscode或者其他编辑器远程 编辑）
 vi /usr/local/nginx/conf/nginx.conf
 
+检查配置文件格式
+nginx -t
+
+其他
 nginx -s reload
 nginx -s quit
-
 nginx -s stop
-
 ```
 
 
@@ -46,10 +48,6 @@ nginx -s stop
 ### 文件/软件包 操作
 
 ```
-
-
-
-
 
 
 
