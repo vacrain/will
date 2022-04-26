@@ -4,9 +4,19 @@
 
 
 
+## tools
 
 
-## Linux
+
+### Git
+
+```
+git log - 查看历史提交记录。
+git blame <file> - 以列表形式查看指定文件的历史修改记录。
+git log --reverse --oneline
+```
+
+
 
 ### jenkins
 
@@ -42,6 +52,10 @@ nginx -s reload
 nginx -s quit
 nginx -s stop
 ```
+
+
+
+## Linux
 
 
 
