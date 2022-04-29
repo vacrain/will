@@ -1,5 +1,9 @@
 # Typora基本设置
 
+> **Typora的更新换代比较快，可能很多界面和下面截图都不一样了**
+>
+> [typora 更新日志](https://typora.io/dev_release.html) 
+>
 > 此次更新不会修改上传图片的设置，还算不错，可以放心更新
 
 [TOC]

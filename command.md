@@ -57,6 +57,18 @@ nginx -s stop
 
 ## Linux
 
+### 生成目录结构
+
+```
+除了这个文件夹
+> tree -I "node_modules"
+
+只显示目录
+> tree -d
+```
+
+
+
 
 
 ### 文件/软件包 操作
@@ -203,21 +215,6 @@ defaults write com.apple.finder AppleShowAllFiles -boolean false;killall Finder
 
 
 
-
-
-
-
-## Misc 
-
-### 生成目录结构
-
-```
-除了这个文件夹
-> tree -I "node_modules"
-
-只显示目录
-> tree -d
-```
 
 
 
