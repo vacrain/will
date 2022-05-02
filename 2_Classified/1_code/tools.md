@@ -741,21 +741,6 @@ cat 自己起的文件名.pub
 
 ### 如何将代码同时提交到Github和码云Gitee上
 
-https://blog.csdn.net/gozhuyinglong/article/details/113861993
-
-- 配置好后，每次提交下面两个命令各用一次就好，或者用vscode 点点点就行
-
-```
-git push
-git push gitee
-```
-
-- vscode 点点点提交，正常同步github（如果github是第一个remote库的话），再点一下下面的按钮，然后选gitee提交一下
-
-![image-20220420073253948](https://gitee.com/vacrain/typora_img/raw/master/assets/imgs/2021/2022-04-20_07-32-54_image-20220420073253948.png)
-
-
-
 **配置说明** ：
 
 - 查看
@@ -828,16 +813,23 @@ git remote remove gitee
 
 
 
+- 参考：
 
+https://blog.csdn.net/gozhuyinglong/article/details/113861993
 
-
-
-
+- 配置好后，每次提交下面两个命令各用一次就好，或者用vscode 点点点就行
 
 ```
 git push
 git push gitee
 ```
+
+- vscode 点点点提交，正常同步github（如果github是第一个remote库的话），再点一下下面的按钮，然后选gitee提交一下
+
+![image-20220420073253948](https://gitee.com/vacrain/typora_img/raw/master/assets/imgs/2021/2022-04-20_07-32-54_image-20220420073253948.png)
+
+
+
 
 
 
