@@ -2,6 +2,17 @@
 
 [toc]
 
+## Vscode
+
+### koro1FileHeader 插件快捷键
+
+函数注释 快捷键：(对剪头函数不是很友好)
+
+- `window`：`ctrl+win+t``
+- ``mac`：`ctrl+cmd+t`,
+- `linux`: `ctrl+meta+t`,
+-  `Ubuntu`: `ctrl+super+t` 
+
 
 
 ## tools
@@ -74,17 +85,12 @@ nginx -s stop
 
 
 
-### 文件/软件包 操作
+### 文件/压缩包 操作
 
 ```
 
-
-
 创建文件
 touch
-
-卸载
-rpm -e 包名
 
 解压
 tar -zxvf xxxxxxxx.tar.gz
@@ -98,6 +104,26 @@ less
 cat
 ```
 
+### rpm yum包相关操作
+
+```
+查看安装
+rpm -qa | grep xxx
+
+卸载
+rpm -e 包名
+rpm -e mysql-libs --nodeps xxx
+
+看rpm包，安装的详细路径
+rpm -ql 包名
+
+查看软件版本
+rpm -qa | grep java
+
+yum已安装
+yum list installed 
+```
+
 
 
 ### 查看（非文件内容）
@@ -108,18 +134,11 @@ cat
 
 
 
-
-看rpm包，安装的详细路径
-rpm -ql +包名
-
 网络,查询指定端口号情况
 > netstat -tnlp | grep :80
 
 环境变量
 > echo $PATH
-
-查看软件版本
->rpm -qa | grep java
 
 查看内核版本
 > arch
@@ -137,7 +156,83 @@ du -sh *
 > cat /etc/redhat-release
 ```
 
-### vim
+### >> vim <<
+
+#### 光标移动(Cursor Movement)
+
+命令    作用（解释）
+h,j,k,l    h表示往左，j表示往下，k表示往右，l表示往上
+Ctrl+f    上一页
+Ctrl+b    下一页
+w, e, W, E    跳到单词的后面，小写包括标点
+b, B    以单词为单位往前跳动光标，小写包含标点
+O    开启新的一行
+^    一行的开始
+$    一行的结尾
+gg    文档的第一行
+[N]G    文档的第N行或者最后一行
+
+#### 插入模式(Insert Mode)
+
+命令    作用（解释)
+i    插入到光标前面
+I    插入到行的开始位置
+a    插入到光标的后面
+A    插入到行的最后位置
+o, O    新开一行
+Esc    关闭插入模式
+
+#### 编辑(Editing)
+
+命令    作用（解释）
+r    在插入模式替换光标所在的一个字符
+J    合并下一行到上一行
+s    删除光标所在的一个字符, 光标还在当行
+S    删除光标所在的一行，光标还在当行，不同于dd
+u    撤销上一步操作
+ctrl+r    恢复上一步操作
+.    重复最后一个命令
+~    变换为大写
+[N]>>    一行或N行往右移动一个tab
+[N]<<    一行或N行往左移动一个tab
+
+#### 关闭(Exiting)
+
+命令    作用（解释)
+:w    保存
+:wq, :x    保存并关闭
+:q    关闭（已保存）
+:q!    强制关闭
+
+#### 搜索(Search)
+
+命令    作用（解释)
+/pattern    搜索（非插入模式)
+?pattern    往后搜索
+n    光标到达搜索结果的前一个目标
+N    光标到达搜索结果的后一个目标
+
+#### 视觉模式(Visual Mode)
+
+命令    作用（解释)
+v    选中一个或多个字符
+V    选中一行
+
+#### 剪切和复制(Cut and Paste)
+
+命令    作用（解释)
+dd    删除一行
+dw    删除一个单词
+x    删除后一个字符
+X    删除前一个字符
+D    删除一行最后一个字符
+[N]yy    复制一行或者N行
+yw    复制一个单词
+p    粘贴
+
+
+
+
 
 ```
 剪切当前行
@@ -163,6 +258,18 @@ G
 
 
 ## Node
+
+### 常用
+
+查看全局安装
+
+```
+npm ls -g
+```
+
+
+
+
 
 ### win 切换 node版本用的 NVM
 
