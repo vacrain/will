@@ -28,9 +28,14 @@ git log - 查看历史提交记录。
 git blame <file> - 以列表形式查看指定文件的历史修改记录。
 git log --reverse --oneline
 
+切换仓库、重命名、指定仓库的分支进行提交
+git remote
+git remote -v
+git remote rename origin xxx
+git remote add yyy repoUrl
+git push xxx
+
 ```
-
-
 
 ### jenkins
 
