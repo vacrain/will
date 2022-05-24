@@ -986,36 +986,6 @@ ctrl + 左键
 
 command + 左键
 
-## Funs
-
-### Discord 账号被 ban 账号不好用原因
-
-https://support.discord.com/hc/zh-tw/requests
-
-```
-账号刚创建就被禁用，申请重置密码。谢谢！The account was disabled just after it was created, and a password reset was requested. Thank you!
-
-I've been using it for a while, and it's somehow been banned, and there's important server information in it, so apply to unblock it! Thank you!
-```
-
-
-
-![image-20220524202931807](https://raw.githubusercontent.com/vacrain/typora_img/main/2022/2022-05-24_20-29-32_image-20220524202931807.png)
-
-
-
-![image-20220524203631610](https://raw.githubusercontent.com/vacrain/typora_img/main/2022/2022-05-24_20-36-31_image-20220524203631610.png)
-
-
-
-1. 去申请修改密码，账号无法登录
-2. 过一到两周会收到邮件，就可以修改了
-
-不能用的原因，大概是系统检测到账号密码被盗，可能是密码相同的平台，密码被盗！
-
-建议是全部密码都重新改一下，尽量每个平台密码都不一样
-
-参考：https://mirror.xyz/boss168.eth/cn32HDHYYyeaSj5s1wnhEu8GDvZw1bD3snqlXuQgDQ8 
 
 ### 辽宁企业登记实名验证活体检测 一直不出摄像是什么原因？
 
