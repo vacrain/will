@@ -1,4 +1,14 @@
+[toc]
+
 # 常用快捷键 - shortcuts
+
+## Common
+
+全局搜索：ctrl + shift + F
+
+选中当前位置的单词：ctrl + D
+
+
 
 ## Vscode
 
@@ -15,68 +25,52 @@
 
 
 
-# 常用命令 - commands
+# OS 常用命令 - os commands
 
 [toc]
 
 
 
-## tools
+
+
+## Mac
 
 
 
-### Git
+### mac安装软件打不开
 
-```
-git-cz
-
-git log - 查看历史提交记录。
-git blame <file> - 以列表形式查看指定文件的历史修改记录。
-git log --reverse --oneline
-
-切换仓库、重命名、指定仓库的分支进行提交
-git remote
-git remote -v
-git remote rename origin xxx
-git remote add yyy repoUrl
-git push xxx
+比如vscode安装完，移动到应用里，然后终端输入下面代码即可
 
 ```
+xattr -d com.apple.quarantine /Applications/Visual\ Studio\ Code.app
+```
 
-### jenkins
+其他类似的也一样
 
 ```
-基本使用 
-service jenkins 后面可以加start、stop、status、restart
-
-修改配置文件
-vi /etc/sysconfig/jenkins
-
-配置重载
-systemctl daemon-reload
-
-systemctl启动，检查状态
-systemctl start jenkins
-systemctl enable jenkins
-systemctl status jenkins.service
+xattr -d com.apple.quarantine /Applications/软件名.app
+xattr -d com.apple.quarantine /Applications/Sublime\ Text.app
 ```
 
 
 
-### nginx
+
+
+### Mac os 文件隐藏与显示
+
+在终端中输代码,即可显示隐藏文件。
 
 ```
-配置文件（不建议使用vi，这玩意有点多，还是用vscode或者其他编辑器远程 编辑）
-vi /usr/local/nginx/conf/nginx.conf
-
-检查配置文件格式
-nginx -t
-
-其他
-nginx -s reload
-nginx -s quit
-nginx -s stop
+defaults write com.apple.finder AppleShowAllFiles -boolean true;killall Finder
 ```
+
+再次隐藏文件，可以输入命令
+
+```
+defaults write com.apple.finder AppleShowAllFiles -boolean false;killall Finder
+```
+
+
 
 
 
@@ -169,7 +163,7 @@ du -sh *
 
 ### >> vim <<
 
-#### 常用
+常用
 
 ```
 剪切当前行
@@ -194,7 +188,7 @@ G
 
 
 
-#### 光标移动(Cursor Movement)
+光标移动(Cursor Movement)
 
 ```
 命令    作用（解释）
@@ -210,7 +204,7 @@ gg    文档的第一行
 [N]G    文档的第N行或者最后一行
 ```
 
-#### 插入模式(Insert Mode)
+插入模式(Insert Mode)
 
 ```
 命令    作用（解释)
@@ -222,7 +216,7 @@ o, O    新开一行
 Esc    关闭插入模式
 ```
 
-#### 编辑(Editing)
+编辑(Editing)
 
 ```
 命令    作用（解释）
@@ -238,7 +232,7 @@ ctrl+r    恢复上一步操作
 [N]<<    一行或N行往左移动一个tab
 ```
 
-#### 关闭(Exiting)
+关闭(Exiting)
 
 ```
 命令    作用（解释)
@@ -248,7 +242,7 @@ ctrl+r    恢复上一步操作
 :q!    强制关闭
 ```
 
-#### 搜索(Search)
+搜索(Search)
 
 ```
 命令    作用（解释)
@@ -258,7 +252,7 @@ n    光标到达搜索结果的前一个目标
 N    光标到达搜索结果的后一个目标
 ```
 
-#### 视觉模式(Visual Mode)
+视觉模式(Visual Mode)
 
 ```
 命令    作用（解释)
@@ -266,7 +260,7 @@ v    选中一个或多个字符
 V    选中一行
 ```
 
-#### 剪切和复制(Cut and Paste)
+剪切和复制(Cut and Paste)
 
 ```
 命令    作用（解释)
@@ -278,6 +272,29 @@ D    删除一行最后一个字符
 [N]yy    复制一行或者N行
 yw    复制一个单词
 p    粘贴
+```
+
+
+
+
+
+# 其他常用命令 - others commands
+
+## Mysql
+
+### root登录
+
+```
+mysql -uroot -p
+然后输入密码
+```
+
+### 修改密码
+
+> 前提是登录了mysql
+
+```
+alter user root@'localhost' identified by '新密码';
 ```
 
 
@@ -309,46 +326,60 @@ nvm root
 
 
 
-## Mac
+## tools
 
 
 
-
-
-### mac安装软件打不开
-
-比如vscode安装完，移动到应用里，然后终端输入下面代码即可
+### Git
 
 ```
-xattr -d com.apple.quarantine /Applications/Visual\ Studio\ Code.app
-```
+git-cz
 
-其他类似的也一样
+git log - 查看历史提交记录。
+git blame <file> - 以列表形式查看指定文件的历史修改记录。
+git log --reverse --oneline
 
-```
-xattr -d com.apple.quarantine /Applications/软件名.app
-xattr -d com.apple.quarantine /Applications/Sublime\ Text.app
-```
-
-
-
-
-
-### Mac os 文件隐藏与显示
-
-在终端中输代码,即可显示隐藏文件。
+切换仓库、重命名、指定仓库的分支进行提交
+git remote
+git remote -v
+git remote rename origin xxx
+git remote add yyy repoUrl
+git push xxx
 
 ```
-defaults write com.apple.finder AppleShowAllFiles -boolean true;killall Finder
-```
 
-再次隐藏文件，可以输入命令
+### jenkins
 
 ```
-defaults write com.apple.finder AppleShowAllFiles -boolean false;killall Finder
+基本使用 
+service jenkins 后面可以加start、stop、status、restart
+
+修改配置文件
+vi /etc/sysconfig/jenkins
+
+配置重载
+systemctl daemon-reload
+
+systemctl启动，检查状态
+systemctl start jenkins
+systemctl enable jenkins
+systemctl status jenkins.service
 ```
 
 
 
+### nginx
 
+```
+配置文件（不建议使用vi，这玩意有点多，还是用vscode或者其他编辑器远程 编辑）
+vi /usr/local/nginx/conf/nginx.conf
+
+检查配置文件格式
+nginx -t
+
+其他
+nginx -s reload
+nginx -s quit
+nginx -s stop
+```
 

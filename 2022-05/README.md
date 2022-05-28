@@ -14,6 +14,102 @@
 
 
 
+### 如何更优雅管理API接口版本（v1/v2/v3…）
+
+参考：https://blog.csdn.net/createNo_1/article/details/89457433
+
+如果是在线服务，没啥问题，如果是发布的应用，比如桌面、手机端应用，那么旧版本的接口需要持续维护，那么就需要分v1、v2、v3等版本的接口分开维护了~
+
+
+
+### State 和 status 区别
+
+参考：https://www.cnblogs.com/likebeta/archive/2012/07/03/2574595.html
+
+state所指的状态，一般都是有限的、可列举的，status则是不可确定的。
+
+
+
+### 数据库设置非空、默认值 请注意
+
+设置默认值时，要加英文的双引号，否则会报错 1064 啥的
+
+设置非空时，可能数据有空的，所以要先给所有的已有record该字段加上数据
+
+或者，偷个懒，就别设置了
+
+在服务器端做好过滤，然后数据库密码定期更新，也可以一定程度上保证安全性和健壮性
+
+
+
+### mysql utf8_general_ci 与 utf8_unicode_ci的区别
+
+参考：https://blog.csdn.net/wangjun5159/article/details/50674736
+
+xx_unicode_ci实现了unicode标准，支持扩展、可忽视字符等，由于准确性高，所以速度“相对慢”，不过根据现有cpu的性能，已经感觉不出“相对慢”。
+
+xx_general_ci相对古老，是utf8的默认校对规则，由于不是那么准确，所以速度快。由于是utf8的默认校对规则，所以，我们推荐使用这种校对规则，在开发中，会省去很多麻烦。
+
+### utf8mb4与utf8的区别
+
+参考：https://blog.csdn.net/Lingfeng928/article/details/73326079
+
+前者是后者的超集，也就是前者包含后者
+
+如果你的系统要保存 表情，选择前者，如果没有，直接后者就ok~
+
+
+
+
+
+### Navicat导出mysql数据表 结构 或者 结构+数据
+
+![image-20220527093205725](https://raw.githubusercontent.com/vacrain/typora_img/main/2022/2022-05-27_09-32-05_image-20220527093205725.png)
+
+### 这个好玩，会随机返回一个答案，yes或no
+
+参考：https://www.runoob.com/try/try.php?filename=vue3-watch-3
+
+```
+
+还附带一个动态表情包
+不过需要稍微修改一下：
+js 修改：
+this.answer = response.data
+html加上：（在{{ answer }}后面加上即可）
+<img :src="answer.image" />
+
+
+随机yes or no ：
+      getAnswer() {
+         this.answer = '加载中...'
+         axios
+            .get('https://yesno.wtf/api')
+            .then(response => {
+			 this.answer = response.data
+			 // 然后answer里面就是：
+			 // { "answer": "no", "forced": false, "image": "https://yesno.wtf/assets/no/xxx.gif" }
+         })
+            .catch(error => {
+            this.answer = '错误! 无法访问 API。 ' + error
+         })
+      }
+```
+
+
+
+### 小宇宙播客 - 最好的投资，是投资自己
+
+https://www.xiaoyuzhoufm.com/episode/628d64070e30c626186839c2?s=eyJ1IjogIjYyMGUwOTgxMmNiZDdjMDE3NmI4ZDNmZiJ9
+
+有关创业、计划、个人发展，很不错的一期！
+
+1. 不能计划太多，甚至最后公司的发展和一开始完全不一样
+2. 巴菲特：你在某件事上做特别好，这件事是通胀无法侵蚀掉这种能力
+3. 以提升个人人力资本为一切选择的基础
+
+
+
 
 
 ### monorepo 策略说明
@@ -88,7 +184,6 @@ https://zhuanlan.zhihu.com/p/76951130
 6. 缺点、失误
 
 ### 2022/5/13 离职前记录一下自己用的工具
-
 ![image-20220513155150415](https://github.com/vacrain/typora_img/raw/main/assets/imgs/2022/2022-05-13_15-52-00_image-20220513155150415.png)
 
 ### IDEA 创建 springboot 项目
@@ -484,7 +579,7 @@ mysql -uroot -p  -P 3306 -S /mysql/data/mysql3306/socket/mysql.sock
 #### 改本地登录密码
 
 ```
-alter user root@'localhost' identified by '你自己编一个密码';
+alter user root@'localhost' identified by '新密码';
 
 没事闲的也可以看看mysql状态：
 status
