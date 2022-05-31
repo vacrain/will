@@ -420,7 +420,7 @@ Eclipse 显示面包屑栏：
 
 这原理真没啥可说的。。照着教程啥的做一遍就啥都懂了
 
-![](https://github.com/vacrain/typora_img/raw/main/assets/imgs/2021/2022-04-14_19-26-57_988e1c532f632385f5d24627cce833e038725d7e.jpg)
+![img](https://raw.githubusercontent.com/vacrain/typora_img/main/2022/2022-05-31_10-15-10_v2-48f5650ccd761b648e3d909c86b5e9bd_720w.jpg)
 
 ### git 命令
 
@@ -816,7 +816,7 @@ https://blog.csdn.net/weixin_46504044/article/details/105136645
 > rq 今日的日期
 > #$(year)/$(month)/$(day)
 
-​ 在百度输入法的设置中-更多-自定义短语设置里可以进行对应带设置
+ 在百度输入法的设置中-更多-自定义短语设置里可以进行对应带设置
 
 rq：获取当前日期
 

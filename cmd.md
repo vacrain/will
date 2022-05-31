@@ -4,13 +4,28 @@
 
 ## Common
 
+### 文本编辑
+
 全局搜索：ctrl + shift + F
 
 选中当前位置的单词：ctrl + D
 
 
 
+### 其他
+
+
+
 ## Vscode
+
+### 常用
+
+1. 聚焦到文件树： ctrl/com + shift + E
+   1. 聚焦后，可以直接输入部分文件名进行快速锁定文件，进行操作
+2. 打开终端：ctrl + \`
+3. 打开设置：ctrl/com + ,
+
+
 
 ### 注释 koro1FileHeader
 
@@ -34,6 +49,14 @@
 
 
 ## Mac
+
+
+
+### 终端
+
+清除上一个命令输出：com + L
+
+清屏：alt + com + L 或者 com + k
 
 
 
@@ -284,7 +307,7 @@ p    粘贴
 
 ### root登录
 
-```
+```sh
 mysql -uroot -p
 然后输入密码
 ```
@@ -293,8 +316,16 @@ mysql -uroot -p
 
 > 前提是登录了mysql
 
-```
+```mysql
 alter user root@'localhost' identified by '新密码';
+```
+
+### 查看信息
+
+```mysql
+查看版本
+select version()
+
 ```
 
 
@@ -310,6 +341,14 @@ alter user root@'localhost' identified by '新密码';
 ```
 npm ls -g
 ```
+
+全局安装 或 升级
+
+```
+npm install -g xxxxxx@a.b.c
+```
+
+
 
 
 

@@ -6,11 +6,146 @@
 
 
 
+### 关于版本 git svn
+
+```js
+// 版本
+major：主版本号，不兼容的API修改
+minor：次版本号，向下兼容，功能性增加
+patch：修订号，向下兼容，bug fixed
+
+// 版本发布进度
+alpha（内测）
+beta（公测）
+rc （正式版本的候选版本）  Release Candiate
+
+// npm 发布指令
+升级补丁版本号：npm version patch。
+升级小版本号：npm version minor。
+升级大版本号：npm version major。
+```
+
+### vscode 自动注释插件配置 注释黑名单
+
+[自动添加头部注释黑名单](https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE#%E8%87%AA%E5%8A%A8%E6%B7%BB%E5%8A%A0%E5%A4%B4%E9%83%A8%E6%B3%A8%E9%87%8A%E9%BB%91%E5%90%8D%E5%8D%95)
+
+1. 打开设置界面：ctrl + ,
+
+2. 点右上角图标 ![image-20220531083820740](https://raw.githubusercontent.com/vacrain/typora_img/main/2022/2022-05-31_08-38-21_image-20220531083820740.png)
+3. 找到prohibitAutoAdd并修改如下：
+
+```
+    "prohibitAutoAdd": ["json", "md"],
+```
+
+
+
+### pnpm install 或 add 报红missing peer
+
+![image-20220530183453281](https://raw.githubusercontent.com/vacrain/typora_img/main/2022/2022-05-30_18-34-53_image-20220530183453281.png)
+
+就是类似上图这种，红色后面是没安的，pnpm感觉你需要安装，在should be installed下面会列出来爆红的内容，如果需要就安装，不需要可以无视~
+
+或者在package.json中加入：（如果是monorepo项目，需要在最外层配置）
+
+```
+
+  "pnpm": {
+    "peerDependencyRules": {
+      "ignoreMissing": [
+        "react"
+      ]
+    }
+  }
+```
+
+
+
+参考：https://pnpm.io/package_json#pnpmpeerdependencyrulesignoremissing
+
+
+
+### mac 终端 文本删除快捷键
+
+正常删除：backspace
+
+删除整行：com + backspace
+
+删除单词：alt + backspace
+
+
+
+### vue3 ref和reactive 区别
+
+> 直接上总结：非必要不用reactive，因为它有点返祖，ref更符合直觉，并且解耦性更好
+
+ref用于创建基础类型的响应式数据，ref就是封装了一下{value: 值}。因为原始类型的字面量无法做到响应式，包装成对象就可以了。
+
+reactive用于创建引用类型
+
+ref本质是封装的reactive
+
+使用区别：
+
+![image-20220529150736366](https://raw.githubusercontent.com/vacrain/typora_img/main/2022/2022-05-29_15-07-36_image-20220529150736366.png)
+
+参考：
+
+https://www.bilibili.com/video/BV19Q4y1e75C?spm_id_from=333.337.search-card.all.click
+
+https://www.yisu.com/zixun/604877.html
+
+### vue2  vue3 生命周期对比
+
+周期对比
+
+| vue2          | vue3            |
+| ------------- | --------------- |
+| beforeCreate  | setup           |
+| created       | setup           |
+| beforeMount   | onBeforeMount   |
+| mounted       | onMounted       |
+| beforeUpdate  | onBeforeUpdate  |
+| updated       | onUpdated       |
+| activeted     | onActiveted     |
+| deactiveted   | onDeactiveted   |
+| beforeDestory | onBeforeUnmount |
+| destoryed     | onUnmounted     |
+
+用法：
+
+```
+// vue3
+import { omMounted } from 'vue'
+
+setup() {
+    onMounted(() => { ... })
+}
+
+// vue2
+data() {
+    return {}
+},
+created() {
+    ...
+}
+
+
+```
 
 
 
 
 
+### @ts-ignore 使用及问题
+
+可以忽略下一行的ts检查
+
+遇到不能用的情况，报错：Do not use "@ts-ignore" because it alters compilation errors.，如下图
+
+![image-20220528201001955](https://raw.githubusercontent.com/vacrain/typora_img/main/2022/2022-05-28_20-10-02_image-20220528201001955.png)
+
+只需要在.eslintrc.js里的rules中添加：    '@typescript-eslint/ban-ts-comment': 'off',
 
 
 
