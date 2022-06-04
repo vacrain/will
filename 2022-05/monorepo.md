@@ -1,4 +1,4 @@
-# monorepo最佳实践
+# monorepo 实践总结
 
 > 2022-05-31 看了一些天monorepo，不再观望，做一些demo，然后把steppp整合一下
 

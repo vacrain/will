@@ -97,7 +97,7 @@ defaults write com.apple.finder AppleShowAllFiles -boolean false;killall Finder
 
 
 
-## Linux
+## Linux / Mac
 
 ### 生成目录结构
 
@@ -109,9 +109,18 @@ defaults write com.apple.finder AppleShowAllFiles -boolean false;killall Finder
 > tree -d
 ```
 
+### 进程
 
+```
+查看 pid：
+> pgrep -f ‘文件名’
+或者
+> lsof -i:端口号|grep LISTEN
 
+根据pid杀进程：
+> kill -9 进程号
 
+```
 
 ### 文件/压缩包 操作
 
@@ -308,6 +317,13 @@ p    粘贴
 ### root登录
 
 ```sh
+Linux登录方式：
+先切换用户（命令运行后，输入开机密码）
+su - mysql
+登录mysql（命令运行后，输入mysql密码）
+mysql -uroot -p  -P 3306 -S /mysql/data/mysql3306/socket/mysql.sock
+
+mac登录方式：
 mysql -uroot -p
 然后输入密码
 ```
@@ -318,6 +334,9 @@ mysql -uroot -p
 
 ```mysql
 alter user root@'localhost' identified by '新密码';
+
+注意，如果要改远程连接的用户密码，需要改另一个！！
+alter user root@'%' identified by '新密码';
 ```
 
 ### 查看信息
