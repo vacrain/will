@@ -8,6 +8,14 @@
 
 
 
+
+
+### vscode 自动添加注释
+
+参考：https://github.com/OBKoro1/koro1FileHeader/wiki/
+
+
+
 ### sh脚本函数
 
 ```
