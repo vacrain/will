@@ -19,7 +19,7 @@ vite.config.js 配置入门详解 https://www.jb51.net/article/236293.htm
 创建 vue3 + vite 项目
 
 ```
-pnpm init vite@latest
+pnpm create vite@latest
 or
 npm init @vitejs/app 项目名称
 or
