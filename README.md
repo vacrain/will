@@ -1,5 +1,7 @@
 # :memo: WILL
 
+> # 现将笔记全部移到[Steppp项目](https://github.com/vacrain/steppp)的[docs目录](https://github.com/vacrain/steppp/tree/main/docs)中
+>
 > What I Learned Latest ~ 这个项目是记录我的最新学习的笔记（当然也包括过去的）
 >
 > :question::grey_exclamation: 询问知识的最好途径是问一个刚学会的人，因为那个时候他还没有被知识诅咒，尚在围城之门槛，可拉你一把！
